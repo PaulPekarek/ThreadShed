@@ -108,7 +108,7 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,; green&white&blue   ;,; 09/15/17 , Myrtle Morris 
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
-# takes daily_sales list and replaces ;,; with : 
+#takes daily_sales list and replaces ;,; with : 
 daily_sales_replaced = daily_sales.replace(";,;", ":")
 #print(daily_sales_replaced)
 
@@ -121,6 +121,7 @@ for transaction in daily_transactions:
 #print (daily_transactions_split)
 
 #iterates through outer list and inner list of daily_transactions_split returns to new list without whitespaces
+
 transactions_clean = []
 for transaction in daily_transactions_split:
   transaction_clean = []
